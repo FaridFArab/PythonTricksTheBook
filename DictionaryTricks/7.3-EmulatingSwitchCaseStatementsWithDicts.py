@@ -28,7 +28,7 @@ def dispatch_dict(operator, x, y):
     }.get(operator, lambda: None)()
 
 """
-every time we call dispatch_dict(), it creates a temporary dictionary and a bunch of lambdas for the opcode lookup.
+Every time we call dispatch_dict(), it creates a temporary dictionary and a bunch of lambdas for the opcode lookup.
 if we really wanted to do some simple arithmetic like x + y, then we’d be better off using Python’s built-in operator 
 module instead of the lambda functions used in the example.
 """
